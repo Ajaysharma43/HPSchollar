@@ -66,14 +66,14 @@ const Navbar = () => {
             <FaBars size={20} />
           </div>
           {isMenuVisible && (
-            <div className="absolute top-[60px] right-0 bg-[#D9D9D9] w-full p-2 text-[14px] font-sans font-semibold z-10">
-              <h1 className="font-light text-[20px]">Home</h1>
-              <h1 className="font-light text-[20px]">About</h1>
+            <div className="absolute top-[60px] right-0 bg-white w-full p-2 text-[14px] font-sans font-semibold z-10">
+              <h1 className="font-semibold text-[30px] w-full border-b-[1px]">Home</h1>
+              <h1 className="font-semibold text-[30px] w-full border-b-[1px]">About</h1>
               <div className="flex relative">
                 <Accordion>
                   <AccordionItem
                     header={`Himachal GK >`}
-                    className="font-bold text-[20px]"
+                    className="font-semibold text-[30px] w-full border-b-[1px]"
                   >
                     <h1 className="font-bold">History</h1>
                     <h1>Geography</h1>
@@ -81,13 +81,13 @@ const Navbar = () => {
                   </AccordionItem>
                 </Accordion>
               </div>
-              <h1 className="font-light text-[20px]">Test Series</h1>
-              <h1 className="font-light text-[20px]">HP Quiz</h1>
-              <h1 className="font-light text-[20px]">Job sessions</h1>
-              <h1 className="font-light text-[20px]">Current affairs</h1>
-              <h1 className="font-light text-[20px]">Teacher Session</h1>
-              <h1 className="font-light text-[20px]">Blog</h1>
-              <h1 className="font-light text-[20px]">Contact us</h1>
+              <h1 className="font-semibold text-[30px] w-full border-b-[1px]">Test Series</h1>
+              <h1 className="font-semibold text-[30px] w-full border-b-[1px]">HP Quiz</h1>
+              <h1 className="font-semibold text-[30px] w-full border-b-[1px]">Job sessions</h1>
+              <h1 className="font-semibold text-[30px] w-full border-b-[1px]">Current affairs</h1>
+              <h1 className="font-semibold text-[30px] w-full border-b-[1px]">Teacher Session</h1>
+              <h1 className="font-semibold text-[30px] w-full border-b-[1px]">Blog</h1>
+              <h1 className="font-bold text-[30px] w-full">Contact us</h1>
             </div>
           )}
         </section>
