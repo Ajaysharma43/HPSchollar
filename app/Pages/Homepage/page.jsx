@@ -8,8 +8,12 @@ const Homapage = () => {
             <Homapage_Slider/>
         </article>
 
-        <article className="flex justify-center">
+        <article className="flex justify-center ml-3 mr-3">
             <Cards_Component/>
+        </article>
+
+        <article>
+            
         </article>
         </>
     )

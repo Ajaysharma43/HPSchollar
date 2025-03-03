@@ -27,7 +27,7 @@ const Homepage_Slider = () => {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className="w-full flex-shrink-0"
+            className="w-full flex-shrink-0 h-fit"
           >
             <div>{slide}</div>
           </div>

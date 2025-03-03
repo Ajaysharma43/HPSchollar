@@ -6,7 +6,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 const Cards_Component = () => {
   return (
     <>
-      <div className="flex flex-wrap  justify-center gap-[30px] bg-[#FFFFFF] w-[1207.563232421875px] rounded-3xl pt-10 relative bottom-10 p-5">
+      <div className="flex flex-wrap  justify-center gap-[30px] bg-[#FFFFFF] w-[1207.563232421875px] rounded-3xl pt-10 relative bottom-20 p-5">
         <section className="bg-[#292929] w-[341.61566162109375px] h-[172.69000244140625px] rounded-[10px] text-center flex flex-col items-center justify-center">
           <Image
             src={Education_Icon}

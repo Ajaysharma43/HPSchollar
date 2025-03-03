@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex justify-center xl:gap-[187px] 2xl:gap-[187px] gap-[70%] relative top-2 pb-2 p-2">
+      <nav className="flex justify-center xl:gap-[187px] 2xl:gap-[187px] gap-[70%] relative top-2 bottom-2 pt-2 pb-2 p-2">
         <section>
           <Image
             src={LOGO}
