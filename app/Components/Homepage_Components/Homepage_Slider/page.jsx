@@ -1,10 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
 import Slide1 from "./Slider_Components/Slide1/page";
+import Slide2 from "./Slider_Components/Slide2/page";
+import Slide3 from "./Slider_Components/Slide3/page";
+import Slide4 from "./Slider_Components/Slide4/page";
 
 const Homepage_Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = [<Slide1 />, 2, 3, 4, 5, 6];
+  const slides = [<Slide1 />, <Slide2/>, <Slide3/>, <Slide4/>];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -26,16 +29,16 @@ const Homepage_Slider = () => {
             key={index}
             className="w-full flex-shrink-0"
           >
-            <div className="text-2xl">{slide}</div>
+            <div>{slide}</div>
           </div>
         ))}
       </div>
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-[100px] left-1/2 transform -translate-x-1/2 flex space-x-2">
         {slides.map((_, index) => (
           <span
             key={index}
             className={`h-3 w-3 rounded-full cursor-pointer ${
-              index === currentSlide ? "bg-gray-800" : "bg-gray-400"
+              index === currentSlide ? "bg-[#FCC400] border-2 border-solid border-[#FFFFFF]" : "border-2 border-solid border-[#FFFFFF]"
             }`}
             onClick={() => setCurrentSlide(index)}
           ></span>

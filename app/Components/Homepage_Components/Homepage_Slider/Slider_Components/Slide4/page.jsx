@@ -1,11 +1,13 @@
 "use client";
 import Image_Component from "../../Image_Component/page";
-import Image from "@/public/Assests/Homapage/Logo.jpg-removebg-preview (1) 1 (1).png";
+import Banner from "@/public/Assests/Homapage/img-3 1-Photoroom.png";
+import Image_bg from "@/public/Assests/Homapage/Logo.jpg-removebg-preview (1) 1 (1).png";
+import Image from "next/image";
 
-const Slide1 = () => {
+const Slide4 = () => {
   return (
     <>
-      <div className="h-full w-full flex flex-col-reverse md:flex-row justify-center items-center bg-[#0F7500] pt-10 p-3">
+      <div className="h-full w-full flex flex-col-reverse md:flex-row justify-center items-center bg-[#12b4a4] pt-10 p-3">
         <section className="w-full md:w-[653px] grid gap-[19px] text-center md:text-left">
           <h1 className="text-[#FCC400] text-[20px]">Welcome to HPSCholar</h1>
           <h1 className="grid text-[30px] md:text-[50px] font-bold text-white">
@@ -23,10 +25,10 @@ const Slide1 = () => {
         <section className="relative w-full md:w-auto">
           <div
             className="absolute inset-0 bg-cover bg-no-repeat opacity-50 md:opacity-[8%] left-0 md:left-[200px] w-full h-full md:min-h-[100vh]"
-            style={{ backgroundImage: `url('${Image.src}')` }}
+            style={{ backgroundImage: `url('${Image_bg.src}')` }}
           ></div>
           <div className="relative z-10 flex justify-center md:block">
-            <Image_Component />
+            <Image src={Banner} width={451.335} height={570.972} alt="Banner Image" />
           </div>
         </section>
       </div>
@@ -34,4 +36,4 @@ const Slide1 = () => {
   );
 };
 
-export default Slide1;
+export default Slide4;

@@ -6,6 +6,10 @@ const Homapage = () => {
         <article>
             <Homapage_Slider/>
         </article>
+
+        <article>
+            
+        </article>
         </>
     )
 }
