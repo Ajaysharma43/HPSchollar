@@ -7,7 +7,7 @@ import Image from "next/image";
 const Slide4 = () => {
   return (
     <>
-      <div className="h-full w-full flex flex-col-reverse md:flex-row justify-center items-center bg-[#12b4a4] pt-10 pb-28 p-3">
+      <div className="h-full md:h-[619.11px] xl:h-[619.11px] 2xl:h-[619.11px] w-full flex flex-col-reverse md:flex-row justify-center items-center bg-[#12b4a4] pt-10 pb-28 p-3">
         <section className="w-full md:w-[653px] grid gap-[19px] text-center md:text-left">
           <h1 className="text-[#FCC400] text-[20px]">Welcome to HPSCholar</h1>
           <h1 className="grid text-[30px] md:text-[50px] font-bold text-white">
