@@ -1,7 +1,9 @@
 import Card_Component from "@/app/Components/Homepage_Components/Aboutus_Component/page";
+import HomePage_Banner from "@/app/Components/Homepage_Components/Banner_Homepage/page";
 import Cards_Component from "@/app/Components/Homepage_Components/Cards_Component/page";
 import Homapage_AboutUs from "@/app/Components/Homepage_Components/Homepage_Aboutus/page";
 import Homapage_Slider from "@/app/Components/Homepage_Components/Homepage_Slider/page";
+import JobSessions_Component from "@/app/Components/Homepage_Components/JobSessions_Component/page";
 import Paper_Component from "@/app/Components/Homepage_Components/Paper_Components/page";
 
 const Homapage = () => {
@@ -25,6 +27,14 @@ const Homapage = () => {
 
       <article className="md:mt-[100px] bg-[#F7F7F7] grid justify-center">
         <Paper_Component/>
+      </article>
+
+      <article>
+        <JobSessions_Component/>
+      </article>
+
+      <article>
+        <HomePage_Banner/>
       </article>
     </>
   );

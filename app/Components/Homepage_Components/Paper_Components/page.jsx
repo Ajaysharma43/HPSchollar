@@ -4,8 +4,8 @@ import result from "@/public/Assests/Homapage/13705636_2011.i518.015.realistic t
 const Paper_Component = () => {
   return (
     <>
-      <div className="pt-[100px] pb-[100px] w-full md:w-[1208.59px] grid justify-center items-center">
-        <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
+      <div className="pt-[100px] pb-[100px] w-full grid justify-center items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start p-3">
           <div className="text-center md:text-left">
             <h1 className="text-[24.66px] leading-[64.8px] font-medium text-[#FCC400]">
               All Exam Important Questions
@@ -20,7 +20,7 @@ const Paper_Component = () => {
             </button>
           </div>
         </div>
-        <div className="flex flex-wrap md:justify-start justify-center gap-2 pt-3">
+        <div className="flex flex-wrap md:justify-start justify-center gap-2 pt-3 p-2">
           <button className="w-[116.40px] h-[40px] text-[15px] rounded-[10px] shadow-lg font-medium bg-[#FCC400] text-[#FFFFFF]">
             UPSC
           </button>
