@@ -2,6 +2,7 @@ import Card_Component from "@/app/Components/Homepage_Components/Aboutus_Compone
 import Cards_Component from "@/app/Components/Homepage_Components/Cards_Component/page";
 import Homapage_AboutUs from "@/app/Components/Homepage_Components/Homepage_Aboutus/page";
 import Homapage_Slider from "@/app/Components/Homepage_Components/Homepage_Slider/page";
+import Paper_Component from "@/app/Components/Homepage_Components/Paper_Components/page";
 
 const Homapage = () => {
   return (
@@ -20,6 +21,10 @@ const Homapage = () => {
 
       <article className="md:mt-[150px] md:bottom-0 relative bottom-[100px] mb-6">
         <Card_Component />
+      </article>
+
+      <article className="md:mt-[100px] bg-[#F7F7F7] grid justify-center">
+        <Paper_Component/>
       </article>
     </>
   );
