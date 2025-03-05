@@ -1,5 +1,6 @@
 import Card_Component from "@/app/Components/Homepage_Components/Aboutus_Component/page";
 import HomePage_Banner from "@/app/Components/Homepage_Components/Banner_Homepage/page";
+import Blog_Component from "@/app/Components/Homepage_Components/Blog_Component/Blog_Component";
 import Cards_Component from "@/app/Components/Homepage_Components/Cards_Component/page";
 import CardSlider_Homepage from "@/app/Components/Homepage_Components/CardSlider_Homepage/CardSlider_Homepage";
 import Homapage_AboutUs from "@/app/Components/Homepage_Components/Homepage_Aboutus/page";
@@ -45,6 +46,10 @@ const Homapage = () => {
 
       <article className="bg-[#D9D9D9] w-full pt-[100px] pb-[100px]">
         <CardSlider_Homepage/>
+      </article>
+
+      <article className="pt-[100px] pb-[100px]">
+        <Blog_Component/>
       </article>
     </>
   );
