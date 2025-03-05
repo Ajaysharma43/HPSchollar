@@ -5,7 +5,7 @@ const Paper_Component = () => {
   return (
     <>
       <div className="pt-[100px] pb-[100px] w-full grid justify-center items-center">
-        <div className="flex flex-col md:flex-row justify-between items-center md:items-start p-3">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start p-3 m-3">
           <div className="text-center md:text-left">
             <h1 className="text-[24.66px] leading-[64.8px] font-medium text-[#FCC400]">
               All Exam Important Questions
@@ -20,7 +20,7 @@ const Paper_Component = () => {
             </button>
           </div>
         </div>
-        <div className="flex flex-wrap md:justify-start justify-center gap-2 pt-3 p-2">
+        <div className="flex flex-wrap md:justify-start justify-center gap-2 pt-3 p-2 m-3">
           <button className="w-[116.40px] h-[40px] text-[15px] rounded-[10px] shadow-lg font-medium bg-[#FCC400] text-[#FFFFFF]">
             UPSC
           </button>
@@ -53,7 +53,7 @@ const Paper_Component = () => {
           </button>
         </div>
         <div className="flex flex-wrap justify-center items-center gap-5 rounded-lg mt-10">
-          <div className="w-[286.53px] h-[304.77px] bg-[#5AB9431A] grid justify-center border border-solid border-[#C8C8C8] rounded-lg shadow-xl">
+          <div className=" w-full sm:w-[286.53px] h-[304.77px] m-5 bg-[#5AB9431A] grid justify-center border border-solid border-[#C8C8C8] rounded-lg shadow-xl">
             <div className="text-left p-2">
               <h1 className="text-[25px] font-medium leading-[33px]">
                 Revision notes
@@ -70,7 +70,7 @@ const Paper_Component = () => {
             </div>
           </div>
 
-          <div className="w-[286.53px] h-[304.77px] bg-[#FCC4000D] grid justify-center border border-solid border-[#C8C8C8] rounded-lg shadow-xl">
+          <div className="w-full sm:w-[286.53px] h-[304.77px] m-5 bg-[#FCC4000D] grid justify-center border border-solid border-[#C8C8C8] rounded-lg shadow-xl">
             <div className="text-left p-2">
               <h1 className="text-[25px] font-medium leading-[33px] w-[213.64px]">
                 Important question papers
@@ -87,7 +87,7 @@ const Paper_Component = () => {
             </div>
           </div>
 
-          <div className="w-[286.53px] h-[304.77px] bg-[#5AB9431A] grid justify-center border border-solid border-[#C8C8C8] rounded-lg shadow-xl">
+          <div className="w-full sm:w-[286.53px] h-[304.77px] m-5 bg-[#5AB9431A] grid justify-center border border-solid border-[#C8C8C8] rounded-lg shadow-xl">
             <div className="text-left p-2">
               <h1 className="text-[25px] font-medium leading-[30.4px] w-[213.64px]">
                 Previous year question papers
@@ -104,7 +104,7 @@ const Paper_Component = () => {
             </div>
           </div>
 
-          <div className="w-[286.53px] h-[304.77px] bg-[#FCC4000D] grid justify-center border border-solid border-[#C8C8C8] rounded-lg shadow-xl">
+          <div className="w-full sm:w-[286.53px] h-[304.77px] m-5 bg-[#FCC4000D] grid justify-center border border-solid border-[#C8C8C8] rounded-lg shadow-xl">
             <div className="text-left p-2">
               <h1 className="text-[25px] font-medium leading-[30.4px] w-[213.64px]">
                 Sample question papers
