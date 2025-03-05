@@ -3,7 +3,7 @@ import { FaClock } from "react-icons/fa";
 const JobSessions_Component = () => {
   return (
     <>
-      <div className="pt-[100px] pb-[100px] xl:pb-0 ">
+      <div className="pt-[100px] pb-[100px] xl:pb-0  m-3">
         <div className="flex flex-wrap items-center xl:gap-[250px] md:flex-row justify-around md:items-start p-3 w-full">
           <div className="text-center md:text-left">
             <h1 className="text-[24.66px] leading-[64.8px] font-medium text-[#FCC400]">
