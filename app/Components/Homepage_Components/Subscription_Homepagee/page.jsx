@@ -7,7 +7,16 @@ import { TbCheckbox } from "react-icons/tb";
 const Subscription_Homepage = () => {
   return (
     <>
-      <div className="flex flex-wrap justify-center gap-5">
+    <div className="pt-[100px] pb-[100px]">
+    <div className="grid justify-center px-4">
+  <h1 className="text-[20px] md:text-[24.66px] text-[#FCC400] leading-[30px] md:leading-[64.8px] font-medium uppercase text-center">
+    Online course
+  </h1>
+  <p className="text-[24px] md:text-[49.32px] text-[#000000] leading-[30px] md:leading-[57.9px] font-bold uppercase text-center md:w-[815.51px] xl:w-[815.51px] 2xl:w-[815.51px]">
+    Transform Your Career with Our online Course
+  </p>
+</div>
+      <div className="flex flex-wrap justify-center gap-5 m-6">
         <div className="overflow-hidden w-[583.72px] h-[575.20px] relative flex flex-col bg-white rounded-lg p-6 shadow-2xl">
           <div className="w-[647.85px] h-[647.85px] bg-[#FCC4000F] rounded-full absolute top-[-354.19px] left-[173.64px]"></div>
           <div className="w-[412.87px]">
@@ -16,20 +25,20 @@ const Subscription_Homepage = () => {
             </h1>
             <ul className="space-y-2 mb-6 w-[245.77px]">
               <li className="flex items-center">
-                <TbCheckbox className="text-[#FCC400]" size={30} />
+                <TbCheckbox className="text-[#FCC400] m-2" size={40} />
                 <h1 className="text-[16px] font-normal">
                   There are many variations of passages of Lorem
                 </h1>
               </li>
               <li className="flex items-center">
-                <TbCheckbox className="text-[#FCC400]" size={30} />
+                <TbCheckbox className="text-[#FCC400] m-2" size={40} />
                 <h1 className="text-[16px] font-normal">
                   It is a long established fact that a reader will be
                   distracted 
                 </h1>
               </li>
               <li className="flex items-center">
-                <TbCheckbox className="text-[#FCC400]" size={30} />
+                <TbCheckbox className="text-[#FCC400] m-2" size={40} />
                 <h1 className="text-[16px] font-normal">
                   There are many variations of passages of Lorem
                 </h1>
@@ -41,12 +50,12 @@ const Subscription_Homepage = () => {
                 style={{ backgroundImage: `url('${Label.src}')` }}
                 className="w-[175.86px] h-[46.01px] bg-contain bg-no-repeat border-white flex justify-between overflow-hidden text-center"
               >
-                <h1 className="text-[14px] leading-[21.4px] font-medium p-[9px]">
+                <h1 className="text-[12px] leading-[21.4px] font-semibold p-[10px]">
                   Only At
                 </h1>
                 <div
                   style={{ backgroundImage: `url('${Labelbg.src}')` }}
-                  className="bg-no-repeat bg-contain w-[111.57px] h-[45.01px]"
+                  className="bg-no-repeat bg-contain w-[112.57px] h-[46.01px]"
                 >
                   <h1 className="text-[15px] leading-[25.4px] font-bold text-[#FFFFFF] pt-2.5 pr-1">
                     ₹ 5,000
@@ -62,7 +71,7 @@ const Subscription_Homepage = () => {
 
           <div
             style={{ backgroundImage: `url('${Banner1.src}')` }}
-            className="h-[411.0px] w-[330.71px] bg-cover bg-no-repeat absolute top-[160px] left-[250px]"
+            className="h-[411.0px] w-[330.71px] bg-cover bg-no-repeat absolute top-[160px] sm:left-[250px] hidden sm:block  md:block xl:block 2xl:block"
           ></div>
         </div>
 
@@ -74,20 +83,20 @@ const Subscription_Homepage = () => {
             </h1>
             <ul className="space-y-2 mb-6 w-[245.77px]">
               <li className="flex items-center">
-                <TbCheckbox className="text-[#FCC400]" size={30} />
+                <TbCheckbox className="text-[#FCC400] m-2" size={40} />
                 <h1 className="text-[16px] font-normal">
                   There are many variations of passages of Lorem
                 </h1>
               </li>
               <li className="flex items-center">
-                <TbCheckbox className="text-[#FCC400]" size={30} />
+                <TbCheckbox className="text-[#FCC400] m-2" size={40} />
                 <h1 className="text-[16px] font-normal">
                   It is a long established fact that a reader will be
                   distracted 
                 </h1>
               </li>
               <li className="flex items-center">
-                <TbCheckbox className="text-[#FCC400]" size={30} />
+                <TbCheckbox className="text-[#FCC400] m-2" size={40} />
                 <h1 className="text-[16px] font-normal">
                   There are many variations of passages of Lorem
                 </h1>
@@ -98,12 +107,12 @@ const Subscription_Homepage = () => {
                 style={{ backgroundImage: `url('${Label.src}')` }}
                 className="w-[175.86px] h-[46.01px] bg-contain bg-no-repeat border-white flex justify-between overflow-hidden text-center"
               >
-                <h1 className="text-[14px] leading-[21.4px] font-medium p-[9px]">
+                <h1 className="text-[12px] leading-[21.4px] font-semibold p-[9px]">
                   Only At
                 </h1>
                 <div
                   style={{ backgroundImage: `url('${Labelbg.src}')` }}
-                  className="bg-no-repeat bg-contain w-[110.57px] h-[45.01px]"
+                  className="bg-no-repeat bg-contain w-[114.57px] h-[47.01px]"
                 >
                   <h1 className="text-[15px] leading-[25.4px] font-bold text-[#FFFFFF] pt-2.5 pr-1">
                     ₹ 5,000
@@ -119,9 +128,10 @@ const Subscription_Homepage = () => {
 
           <div
             style={{ backgroundImage: `url('${Banner2.src}')` }}
-            className="h-[411.0px] w-[330.71px] bg-cover bg-no-repeat absolute top-[160px] left-[250px]"
+            className="h-[411.0px] w-[330.71px] bg-cover bg-no-repeat absolute top-[160px] sm:left-[250px] hidden sm:block  md:block xl:block 2xl:block"
           ></div>
         </div>
+      </div>
       </div>
     </>
   );
