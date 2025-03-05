@@ -5,6 +5,7 @@ import Homapage_AboutUs from "@/app/Components/Homepage_Components/Homepage_Abou
 import Homapage_Slider from "@/app/Components/Homepage_Components/Homepage_Slider/page";
 import JobSessions_Component from "@/app/Components/Homepage_Components/JobSessions_Component/page";
 import Paper_Component from "@/app/Components/Homepage_Components/Paper_Components/page";
+import Subscription_Homepage from "@/app/Components/Homepage_Components/Subscription_Homepagee/page";
 
 const Homapage = () => {
   return (
@@ -35,6 +36,10 @@ const Homapage = () => {
 
       <article>
         <HomePage_Banner/>
+      </article>
+
+      <article>
+        <Subscription_Homepage/>
       </article>
     </>
   );
