@@ -5,6 +5,7 @@ import { FaBars } from "react-icons/fa";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { Accordion, AccordionItem } from "@szhsin/react-accordion";
+import { motion ,  AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
@@ -61,36 +62,42 @@ const Navbar = () => {
           <h1 className="font-light text-[14px]">Contact us</h1>
         </section>
 
-        <section className="xl:hidden 2xl:hidden">
-          <div onClick={toggleMenu} className="cursor-pointer mt-3">
-            <FaBars size={20} />
-          </div>
-          {isMenuVisible && (
-            <div className="absolute top-[60px] right-0 bg-white w-full p-2 text-[14px] font-sans font-semibold z-10">
-              <h1 className="font-medium text-[25px] w-full border-b-[0.5px] border-gray-400">Home</h1>
-              <h1 className="font-medium text-[25px] w-full border-b-[0.5px] border-gray-400">About</h1>
-              <div className="flex relative">
-                <Accordion>
-                  <AccordionItem
-                    header={`Himachal GK >`}
-                    className="font-medium text-[25px] w-full border-b-[0.5px] border-gray-400"
-                  >
-                    <h1>History</h1>
-                    <h1>Geography</h1>
-                    <h1>Art&Culture</h1>
-                  </AccordionItem>
-                </Accordion>
-              </div>
-              <h1 className="font-medium text-[25px] w-full border-b-[0.5px] border-gray-400">Test Series</h1>
-              <h1 className="font-medium text-[25px] w-full border-b-[0.5px] border-gray-400">HP Quiz</h1>
-              <h1 className="font-medium text-[25px] w-full border-b-[0.5px] border-gray-400">Job sessions</h1>
-              <h1 className="font-medium text-[25px] w-full border-b-[0.5px] border-gray-400">Current affairs</h1>
-              <h1 className="font-medium text-[25px] w-full border-b-[0.5px] border-gray-400">Teacher Session</h1>
-              <h1 className="font-medium text-[25px] w-full border-b-[0.5px] border-gray-400">Blog</h1>
-              <h1 className="font-medium text-[25px] w-full">Contact us</h1>
-            </div>
-          )}
-        </section>
+        <section className="xl:hidden 2xl:hidden relative">
+      <div onClick={toggleMenu} className="cursor-pointer mt-3 p-2">
+        <FaBars size={24} />
+      </div>
+      <AnimatePresence>
+        {isMenuVisible && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10, transition: { duration: 0.3 } }}
+            className="fixed inset-0 bg-white p-6 shadow-lg z-50 overflow-y-auto"
+          >
+            <nav className="flex flex-col gap-4 text-lg font-semibold text-gray-800">
+              <button onClick={toggleMenu} className="self-end text-xl">✖</button>
+              <h1 className="border-b pb-2">Home</h1>
+              <h1 className="border-b pb-2">About</h1>
+              <details className="border-b pb-2">
+                <summary className="cursor-pointer">Himachal GK &gt;</summary>
+                <div className="pl-4 mt-2 text-gray-600">
+                  <p>History</p>
+                  <p>Geography</p>
+                  <p>Art & Culture</p>
+                </div>
+              </details>
+              <h1 className="border-b pb-2">Test Series</h1>
+              <h1 className="border-b pb-2">HP Quiz</h1>
+              <h1 className="border-b pb-2">Job Sessions</h1>
+              <h1 className="border-b pb-2">Current Affairs</h1>
+              <h1 className="border-b pb-2">Teacher Session</h1>
+              <h1 className="border-b pb-2">Blog</h1>
+              <h1>Contact Us</h1>
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </section>
       </nav>
     </>
   );
