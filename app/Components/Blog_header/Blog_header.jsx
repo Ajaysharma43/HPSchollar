@@ -4,7 +4,7 @@ const Blog_Header = () => {
     return(
         <>
         <div style={{backgroundImage : `url("${Banner.src}")`}} className="bg-cover bg-no-repeat">
-            hello
+            <h1>Blog</h1> 
         </div>
         </>
     )
