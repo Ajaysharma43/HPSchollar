@@ -3,7 +3,7 @@ import Image from "next/image";
 const Blog_Header = () => {
     return(
         <>
-        <div style={{backgroundImage : `url("${Banner})`}} className="bg-contain bg-no-repeat">
+        <div style={{backgroundImage : `url("${Banner.src}")`}} className="bg-cover bg-no-repeat">
             hello
         </div>
         </>
