@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import Image1 from "@/public/Assests/Homapage/home1-lastestnews-1 1.png";
 import Image2 from "@/public/Assests/Homapage/home1-lastestnews-2 1.png";
@@ -12,20 +12,43 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Blog_Component = () => {
+
+  const [currentSlide, setCurrentSlide] = useState(0);
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: "0",
+    arrows: false,
+    beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
+    customPaging: (i) => (
+      <div
+        className={`w-3 h-3 rounded-full border p-1 m-2 ${
+          i === currentSlide ? "bg-[#FCC400] border-black" : "border-black"
+        }`}
+      ></div>
+    ),
+    appendDots: (dots) => (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          padding: "10px",
+        }}
+      >
+        {dots}
+      </div>
+    ),
     responsive: [
       {
-        breakpoint: 500, // sm breakpoint
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true,
+          centerMode: false,
         },
       },
     ],
@@ -57,7 +80,7 @@ const Blog_Component = () => {
 
   return (
     <>
-      <div className="flex flex-wrap items-center xl:gap-[300px] md:flex-row justify-around md:items-start p-3 w-full">
+      <div className="flex flex-wrap items-center xl:gap-[250px] md:flex-row justify-around md:items-start p-3 w-full">
         <div className="text-center md:text-left">
           <h1 className="text-[24.66px] leading-[64.8px] font-medium text-[#FCC400] uppercase">
             blog
@@ -96,11 +119,12 @@ const Blog_Component = () => {
                   <h1 className="text-[16.76px] text-[#696969] font-normal capitalize">{post.comments}</h1>
                 </div>
               </div>
-              <div className="border-b-2 border-[#D5D5D5] p-2 flex justify-center">
+              <div className=" p-2 flex justify-center">
                 <p className="text-[19.72px] text-[#292929] leading-[33.53px] font-semibold w-full sm:w-[297.33px]">
                   {post.title}
                 </p>
               </div>
+              <div className="w-[343.41px] h-[3px] bg-[#D5D5D5] flex justify-start relative right-[16px]"></div>
               <div className="flex justify-between p-4">
                 <button className="text-[17.75px] text-[#FCC400] font-normal capitalize">Read more</button>
                 <span><FaArrowRightLong /></span>
@@ -110,8 +134,8 @@ const Blog_Component = () => {
         ))}
       </div>
 
-      <div className="sm:hidden">
-        <Slider {...settings}>
+      <div className="sm:hidden m-10">
+        <Slider {...settings} className="m-0">
           {blogPosts.map((post) => (
             <div key={post.id} className="">
               <div>
@@ -123,7 +147,7 @@ const Blog_Component = () => {
                   className="rounded-t-[10px] w-full"
                 />
               </div>
-              <div className="w-full h-auto rounded-lg shadow-2xl relative bottom-[50px] bg-[#FFFFFF] p-4">
+              <div className="w-full h-auto rounded-lg relative bottom-[50px] bg-[#FFFFFF] p-4 border border-solid border-[#D5D5D5]">
                 <div className="flex flex-col justify-center gap-2 p-4">
                   <div className="flex gap-1 mb-1">
                     <span><FaRegUserCircle size={20} color="#FCC400" /></span>
@@ -134,11 +158,12 @@ const Blog_Component = () => {
                     <h1 className="text-[16.76px] text-[#696969] font-normal capitalize">{post.comments}</h1>
                   </div>
                 </div>
-                <div className="border-b-2 border-[#D5D5D5] p-2 flex justify-center">
+                <div className=" p-2 flex justify-center">
                   <p className="text-[19.72px] text-[#292929] leading-[33.53px] font-semibold w-full">
                     {post.title}
                   </p>
                 </div>
+                <div className="w-[343.41px] h-[3px] bg-[#D5D5D5] flex justify-start relative right-[16px]"></div>
                 <div className="flex justify-between p-4">
                   <button className="text-[17.75px] text-[#FCC400] font-normal capitalize">Read more</button>
                   <span><FaArrowRightLong /></span>

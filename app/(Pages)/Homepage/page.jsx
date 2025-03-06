@@ -3,6 +3,7 @@ import HomePage_Banner from "@/app/Components/Homepage_Components/Banner_Homepag
 import Blog_Component from "@/app/Components/Homepage_Components/Blog_Component/Blog_Component";
 import Cards_Component from "@/app/Components/Homepage_Components/Cards_Component/page";
 import CardSlider_Homepage from "@/app/Components/Homepage_Components/CardSlider_Homepage/CardSlider_Homepage";
+import DemoSession_Homepage from "@/app/Components/Homepage_Components/DemoSession_Homepage/DemoSession_Homepage";
 import Homapage_AboutUs from "@/app/Components/Homepage_Components/Homepage_Aboutus/page";
 import Homapage_Slider from "@/app/Components/Homepage_Components/Homepage_Slider/page";
 import JobSessions_Component from "@/app/Components/Homepage_Components/JobSessions_Component/page";
@@ -50,6 +51,10 @@ const Homapage = () => {
 
       <article className="pt-[100px] pb-[100px]">
         <Blog_Component/>
+      </article>
+
+      <article>
+        <DemoSession_Homepage/>
       </article>
     </>
   );
