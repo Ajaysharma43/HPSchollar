@@ -12,18 +12,18 @@ const Subscription_Homepage = () => {
   <h1 className="text-[20px] md:text-[24.66px] text-[#FCC400] leading-[30px] md:leading-[64.8px] font-medium uppercase text-center">
     Online course
   </h1>
-  <p className="text-[24px] md:text-[49.32px] text-[#000000] leading-[30px] md:leading-[57.9px] font-bold uppercase text-center md:w-[815.51px] xl:w-[815.51px] 2xl:w-[815.51px]">
+  <p className="text-[24px] md:text-[49.32px] text-[#000000] leading-[30px] md:leading-[57.9px] font-bold uppercase text-center md:w-[815.51px]">
     Transform Your Career with Our online Course
   </p>
 </div>
-      <div className="flex flex-wrap justify-center gap-5 m-6">
-        <div className="overflow-hidden w-[583.72px] h-[575.20px] relative flex flex-col bg-white rounded-lg p-6 shadow-2xl">
+      <div className="flex flex-wrap justify-center gap-5 m-6 break-words whitespace-pre-wrap">
+        <div className="overflow-hidden w-[583.72px] sm:h-[575.20px] relative flex flex-col bg-white rounded-lg p-6 shadow-2xl">
           <div className="w-[647.85px] h-[647.85px] bg-[#FCC4000F] rounded-full absolute top-[-354.19px] left-[173.64px]"></div>
-          <div className="w-[412.87px]">
+          <div className="sm:w-[412.87px]">
             <h1 className="text-[#000000] text-[30px] md:text-[40px] font-semibold mb-4 mt-3">
               Enhance lorem ipsum preparation
             </h1>
-            <ul className="space-y-2 mb-6 w-[245.77px]">
+            <ul className="space-y-2 mb-6 sm:w-[245.77px]">
               <li className="flex items-center">
                 <TbCheckbox className="text-[#FCC400] m-2" size={40} />
                 <h1 className="text-[16px] font-normal">
@@ -75,13 +75,13 @@ const Subscription_Homepage = () => {
           ></div>
         </div>
 
-        <div className="overflow-hidden w-[583.72px] h-[575.20px] relative flex flex-col bg-white shadow-2xl rounded-lg p-6">
+        <div className="overflow-hidden w-[583.72px] sm:h-[575.20px] relative flex flex-col bg-white shadow-2xl rounded-lg p-6">
           <div className="w-[647.85px] h-[647.85px] bg-[#5AB9430F] rounded-full absolute top-[-354.19px] left-[173.64px]"></div>
-          <div className="w-[412.87px]">
+          <div className="sm:w-[412.87px]">
             <h1 className="text-[#000000] text-[30px] md:text-[40px] font-semibold mb-6 mt-3">
               Enhance lorem ipsum preparation
             </h1>
-            <ul className="space-y-2 mb-6 w-[245.77px]">
+            <ul className="space-y-2 mb-6 sm:w-[245.77px]">
               <li className="flex items-center">
                 <TbCheckbox className="text-[#FCC400] m-2" size={40} />
                 <h1 className="text-[16px] font-normal">
