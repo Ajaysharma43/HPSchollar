@@ -5,7 +5,7 @@ const Paper_Component = () => {
   return (
     <>
       <div className="pt-[100px] pb-[100px] w-full grid justify-center items-center">
-        <div className="flex flex-col md:flex-row justify-between items-center md:items-start p-3 m-3">
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-start p-3 m-3">
           <div className="text-center md:text-left">
             <h1 className="text-[24.66px] leading-[64.8px] font-medium text-[#FCC400]">
               All Exam Important Questions
@@ -20,7 +20,7 @@ const Paper_Component = () => {
             </button>
           </div>
         </div>
-        <div className="flex flex-wrap md:justify-start justify-center gap-2 pt-3 p-2 m-3">
+        <div className="xl:w-[1208.59px] flex flex-wrap justify-center gap-4 pt-3 p-3 m-3">
           <button className="w-[116.40px] h-[40px] text-[15px] rounded-[10px] shadow-lg font-medium bg-[#FCC400] text-[#FFFFFF]">
             UPSC
           </button>
@@ -65,7 +65,7 @@ const Paper_Component = () => {
                 height={154.35}
                 width={164.16}
                 alt="no image"
-                className="mt-[30px] rounded-b-full"
+                className="mt-[30px] rounded-b-full transition-all duration-500 relative hover:scale-[1.1] hover:bottom-[5px]"
               />
             </div>
           </div>
