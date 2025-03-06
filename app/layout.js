@@ -2,6 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TopBar from "./Components/TopBar/page";
 import Navbar from "./Components/Navbar/page";
+import Footer from "./Components/Footer/page";
+import BottomBar from "./Components/BottomBar/page";
 
 export const metadata = {
   title: "Create Next App",
@@ -16,6 +18,8 @@ export default function RootLayout({ children }) {
         <TopBar/>
         <Navbar/>
         {children}
+        <Footer/>
+        <BottomBar/>
       </body>
     </html>
   );

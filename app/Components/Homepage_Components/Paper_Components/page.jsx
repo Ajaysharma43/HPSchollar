@@ -52,7 +52,7 @@ const Paper_Component = () => {
           JOA
           </button>
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-5 rounded-lg mt-10">
+        <div className="flex flex-wrap justify-center items-center rounded-lg m-0 mt-10">
           <div className=" w-full sm:w-[286.53px] h-[304.77px] m-5 bg-[#5AB9431A] grid justify-center border border-solid border-[#C8C8C8] rounded-lg shadow-xl">
             <div className="text-left p-2">
               <h1 className="text-[25px] font-medium leading-[33px]">
