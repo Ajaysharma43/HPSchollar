@@ -1,5 +1,6 @@
 "use client";
 import Banner from "@/public/Assests/Blog/home1-lastestnews-1 1.png";
+import Banner2 from "@/public/Assests/Blog/bg4-1024x683 1.png"
 import Image from "next/image";
 import { useState } from "react";
 import { FaRegUserCircle } from "react-icons/fa";
@@ -19,7 +20,7 @@ const BlogData = [
     Id: 2,
     Title:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    Image: Banner,
+    Image: Banner2,
     author: "bt admin",
     comments: "1 comment",
   },
@@ -35,7 +36,7 @@ const BlogData = [
     Id: 4,
     Title:
       "The quality role of the elementary teacher in education",
-    Image: Banner,
+    Image: Banner2,
     author: "bt admin",
     comments: "1 comment",
   },
@@ -59,7 +60,7 @@ const BlogData = [
     Id: 7,
     Title:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    Image: Banner,
+    Image: Banner2,
     author: "bt admin",
     comments: "1 comment",
   },
@@ -75,7 +76,7 @@ const BlogData = [
     Id: 9,
     Title:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    Image: Banner,
+    Image: Banner2,
     author: "bt admin",
     comments: "1 comment",
   },
@@ -91,7 +92,7 @@ const BlogData = [
     Id: 11,
     Title:
       "The quality role of the elementary teacher in education",
-    Image: Banner,
+    Image: Banner2,
     author: "bt admin",
     comments: "1 comment",
   },
@@ -129,9 +130,10 @@ const Blog_Body = () => {
               width={384.52}
               height={356.27}
               alt="Blog Image"
-              className="w-[384.52px]"
+              className="w-[384.52px] h-[223.09px] overflow-hidden"
+              loading="lazy"
             />
-            <div className="flex flex-col sm:flex-row justify-start gap-2 pt-[10px] pl-[20px]">
+            <div className="flex flex-col sm:flex-row justify-start gap-4 pt-[10px] pl-[20px]">
               <div className="flex gap-1 mb-1">
                 <span>
                   <FaRegUserCircle size={20} color="#FCC400" />
