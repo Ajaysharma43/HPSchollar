@@ -109,13 +109,13 @@ const CardSlider_Homepage = () => {
         {slides.map((slide, index) => (
           <div key={slide.id} className="p-4">
             <div
-              className={`xl:h-[289.33px]  flex justify-center rounded-lg ${
+              className={`xl:h-[289.33px]  flex justify-center rounded-lg transition-all duration-200 ${
                 currentSlide === index ? "bg-[#FCC400]" : "bg-[#FFFFFF] shadow-xl"
               }`}
             >
               <div className="w-full sm:w-[328.31px] m-4">
                 <p
-                  className={`text-[15px] ${
+                  className={`text-[15px] transition-all duration-200 ${
                     currentSlide === index ? "text-[#FFFFFF]" : "text-[#696969]"
                   } font-normal leading-[30.4px] pt-5 capitalize`}
                 >
@@ -133,14 +133,14 @@ const CardSlider_Homepage = () => {
                     </div>
                     <div>
                       <p
-                        className={`text-[15px] ${
+                        className={`text-[15px] transition-all duration-200 ${
                           currentSlide === index ? "text-[#FFFFFF]" : "text-[#000000]"
                         } font-semibold`}
                       >
                         {slide.title}
                       </p>
                       <p
-                        className={`text-[15px] ${
+                        className={`text-[15px] transition-all duration-200 ${
                           currentSlide == index ? "text-[#FFFFFF]" : "text-[#696969]"
                         } font-normal`}
                       >
@@ -150,7 +150,7 @@ const CardSlider_Homepage = () => {
                   </div>
                   <div>
                     <button
-                      className={`w-[75.19px] h-[21.10px] rounded-[127.58px] text-[12.76px] text-center ${
+                      className={`w-[75.19px] h-[21.10px] rounded-[127.58px] text-[12.76px] text-center transition-all duration-200 ${
                         currentSlide == index
                           ? "text-[#FCC400] bg-[#FFFFFF]"
                           : "bg-[#FCC400] text-[#FFFFFF]"
