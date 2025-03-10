@@ -120,6 +120,11 @@ const Blog_Body = () => {
     currentPage * itemsPerPage
   );
 
+  const setBlogData = (id) => {
+    const Data = BlogData.find((item) => item.Id == id)
+    localStorage.setItem('Data' , JSON.stringify(Data))
+  }
+
   return (
     <>
       <div className="flex flex-wrap justify-center gap-[30px]">
@@ -154,7 +159,7 @@ const Blog_Body = () => {
             <h1 className="text-[19.72px] text-[#292929] leading-[33.53px] font-medium mt-4 border-b-2 border-b-[#D5D5D5] pl-[20px] uppercase">
               {item.Title}
             </h1>
-            <div className="flex justify-between p-4">
+            <div className="flex justify-between p-4" onClick={() => setBlogData(item.Id)}>
               <button className="text-[17.75px] text-[#FCC400] font-normal capitalize">
                 Read more
               </button>
