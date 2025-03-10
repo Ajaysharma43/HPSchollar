@@ -7,6 +7,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { RiMessage2Line } from "react-icons/ri";
 import { IoArrowForwardOutline } from "react-icons/io5";
+import { useRouter } from "next/navigation";
 
 const BlogData = [
   {
@@ -110,6 +111,7 @@ const Blog_Body = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
   const totalPages = Math.ceil(BlogData.length / itemsPerPage);
+  const Navigate = useRouter()
 
   const handleClick = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -123,6 +125,7 @@ const Blog_Body = () => {
   const setBlogData = (id) => {
     const Data = BlogData.find((item) => item.Id == id)
     localStorage.setItem('Data' , JSON.stringify(Data))
+    Navigate.push('/BlogDetail')
   }
 
   return (

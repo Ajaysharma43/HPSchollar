@@ -1,7 +1,11 @@
+import BlogDetailHeader from "@/app/Components/BlogDetailComponents/BlogDetail/BlogDetail";
+
 const BlogDetail = () => {
     return(
         <>
-        <h1>blogDetail</h1>
+        <header>
+            <BlogDetailHeader/>
+        </header>
         </>
     )
 }
