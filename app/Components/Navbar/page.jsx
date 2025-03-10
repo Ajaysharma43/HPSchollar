@@ -66,7 +66,7 @@ const Navbar = () => {
           <h1 className={`font-light text-[14px] ${isActive('/CurrentAffairs') ? 'text-[#FCC400]' : 'text-[#696969]'}`}>Current affairs</h1>
           <h1 className={`font-light text-[14px] ${isActive('/TeacherSession') ? 'text-[#FCC400]' : 'text-[#696969]'}`}>Teacher Session</h1>
           <Link href="/Blog">
-            <h1 className={`font-light text-[14px] ${isActive('/Blog') ? 'text-[#FCC400]' : 'text-[#696969]'}`}>Blog</h1>
+            <h1 className={`font-light text-[14px] ${isActive('/Blog') || isActive('/BlogDetail') ? 'text-[#FCC400]' : 'text-[#696969]'}`}>Blog</h1>
           </Link>
           <h1 className={`font-light text-[14px] ${isActive('/ContactUs') ? 'text-[#FCC400]' : 'text-[#696969]'}`}>Contact us</h1>
         </section>
@@ -103,7 +103,7 @@ const Navbar = () => {
                   <h1 className={`border-b pb-2 ${isActive('/CurrentAffairs') ? 'text-[#FCC400]' : 'text-[#696969]'}`}>Current Affairs</h1>
                   <h1 className={`border-b pb-2 ${isActive('/TeacherSession') ? 'text-[#FCC400]' : 'text-[#696969]'}`}>Teacher Session</h1>
                   <Link href="/Blog">
-                    <h1 className={`border-b pb-2 ${isActive('/Blog') ? 'text-[#FCC400]' : 'text-[#696969]'}`}>Blog</h1>
+                    <h1 className={`border-b pb-2 ${isActive('/Blog') || isActive('/BlogDetail') ? 'text-[#FCC400]' : 'text-[#696969]'}`}>Blog</h1>
                   </Link>
                   <h1 className={`border-b pb-2 ${isActive('/ContactUs') ? 'text-[#FCC400]' : 'text-[#696969]'}`}>Contact Us</h1>
                 </nav>
