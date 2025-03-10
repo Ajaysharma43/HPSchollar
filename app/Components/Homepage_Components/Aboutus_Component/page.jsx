@@ -8,7 +8,7 @@ import { FaClock } from "react-icons/fa";
 const Card_Component = () => {
   return (
     <>
-      <div className="w-full grid justify-center p-5 m-2">
+      <div className="w-full grid justify-center p-5">
         <section className="w-full text-center grid justify-center items-center">
           <h1 className="text-[24.66px] leading-[64.8px] text-[#FCC400] font-medium uppercase">
             Himachal GK
