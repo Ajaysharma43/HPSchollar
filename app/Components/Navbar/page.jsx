@@ -70,7 +70,9 @@ const Navbar = () => {
           <Link href="/Blog">
             <h1 className={`font-light text-[14px] ${isActive('/Blog') || isActive('/BlogDetail') ? 'text-[#FCC400]' : 'text-[#696969]'}`}>Blog</h1>
           </Link>
-          <h1 className={`font-light text-[14px] ${isActive('/ContactUs') ? 'text-[#FCC400]' : 'text-[#696969]'}`}>Contact us</h1>
+          <Link href="/Contact">
+          <h1 className={`font-light text-[14px] ${isActive('/Contact') ? 'text-[#FCC400]' : 'text-[#696969]'}`}>Contact us</h1>
+          </Link>
         </section>
 
         <section className="xl:hidden 2xl:hidden relative">
