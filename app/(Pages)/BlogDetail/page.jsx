@@ -11,7 +11,7 @@ const BlogDetail = () => {
             <BlogDetailHeader/>
         </header>
 
-        <article className="m-[60px] flex gap-10">
+        <article className="m-4 md:m-[60px] flex gap-10">
             <section><BlogDetailBody/></section>
             <section><BlogDetailBody2/></section>
         </article>
