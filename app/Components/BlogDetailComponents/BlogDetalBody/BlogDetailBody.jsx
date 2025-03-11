@@ -10,11 +10,12 @@ import { useDispatch, useSelector } from "react-redux";
 const BlogDetailBody = () => {
   const SingleBlog = useSelector((state) => state.Blogdata.SingleBlog) || {};
   const search = useSearchParams();
+  const id = search.get('id')
   const dispatch = useDispatch();
   const [Blog, setBlog] = useState({});
 
   useEffect(() => {
-    dispatch(GetSingleBlog({ id: search.get("id") }));
+    dispatch(GetSingleBlog({id}));
   }, [dispatch, search]);
 
   useEffect(() => {
