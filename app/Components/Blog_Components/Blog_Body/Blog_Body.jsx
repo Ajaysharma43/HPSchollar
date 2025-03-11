@@ -61,7 +61,7 @@ const Blog_Body = () => {
                 </h1>
               </div>
             </div>
-            <h1 className="text-[19.72px] text-[#292929] leading-[33.53px] font-medium mt-4 border-b-2 border-b-[#D5D5D5] pl-[20px] uppercase">
+            <h1 className="text-[19.72px] text-[#292929] leading-[33.53px] font-medium mt-4 border-b-2 border-b-[#D5D5D5] pl-[20px] uppercase  sm:h-[101px]">
               {item.Title}
             </h1>
             <Link href={`/BlogDetail?id=${item.Id}`}>
