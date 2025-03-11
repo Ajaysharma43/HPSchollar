@@ -147,7 +147,7 @@ const Blog_Component = () => {
                   className="rounded-t-[10px] w-full"
                 />
               </div>
-              <div className="w-full h-auto rounded-lg relative bottom-[50px] bg-[#FFFFFF] p-4 border border-solid border-[#D5D5D5]">
+              <div className="w-full h-auto rounded-lg relative bottom-[50px] bg-[#FFFFFF] border border-solid border-[#D5D5D5]">
                 <div className="flex flex-col justify-center gap-2 p-4">
                   <div className="flex gap-1 mb-1">
                     <span><FaRegUserCircle size={20} color="#FCC400" /></span>
@@ -158,12 +158,11 @@ const Blog_Component = () => {
                     <h1 className="text-[16.76px] text-[#696969] font-normal capitalize">{post.comments}</h1>
                   </div>
                 </div>
-                <div className=" p-2 flex justify-center">
-                  <p className="text-[19.72px] text-[#292929] leading-[33.53px] font-semibold w-full">
+                <div className="w-full border-b-2 border-b-[#D5D5D5]">
+                  <p className="text-[19.72px] text-[#292929] leading-[33.53px] font-semibold w-full p-4">
                     {post.title}
                   </p>
                 </div>
-                <div className="w-[343.41px] h-[3px] bg-[#D5D5D5] flex justify-start relative right-[16px]"></div>
                 <div className="flex justify-between p-4">
                   <button className="text-[17.75px] text-[#FCC400] font-normal capitalize">Read more</button>
                   <span><FaArrowRightLong /></span>
