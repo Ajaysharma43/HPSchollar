@@ -26,7 +26,7 @@ const BlogDetailBody = () => {
         className="w-full aspect-[4/3] bg-cover bg-center bg-no-repeat relative"
       >
         <h1 className=" bg-[#FDC107] text-white text-2xl sm:text-[50px] p-2 sm:p-4 capitalize w-[80px] sm:w-[157px]">
-          28 <br /> jan
+          {SingleBlog.day} <br /> {SingleBlog.month}
         </h1>
       </div>
 

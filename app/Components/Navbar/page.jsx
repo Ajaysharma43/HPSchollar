@@ -107,7 +107,9 @@ const Navbar = () => {
                   <Link href="/Blog">
                     <h1 className={`border-b pb-2 ${isActive('/Blog') || isActive('/BlogDetail') ? 'text-[#FCC400]' : 'text-[#696969]'}`}>Blog</h1>
                   </Link>
-                  <h1 className={`border-b pb-2 ${isActive('/ContactUs') ? 'text-[#FCC400]' : 'text-[#696969]'}`}>Contact Us</h1>
+                  <Link href="/Contact">
+                  <h1 className={`border-b pb-2 ${isActive('/Contact') ? 'text-[#FCC400]' : 'text-[#696969]'}`}>Contact Us</h1>
+                  </Link>
                 </nav>
               </motion.div>
             )}
