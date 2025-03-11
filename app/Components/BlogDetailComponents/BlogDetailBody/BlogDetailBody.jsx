@@ -57,9 +57,9 @@ const BlogDetailBody2 = () => {
       <div className="xl:hidden">
         <button
           onClick={() => setIsDrawerOpen(true)}
-          className="flex items-center gap-2 px-4 py-2 bg-[#FDC107] text-white rounded-md"
+          className=" fixed bg-[#FDC107] text-white rounded-md"
         >
-          <FaBars size={20} />
+          <FaBars size={20} className="text-center"/>
           <span>Open Menu</span>
         </button>
 
