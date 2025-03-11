@@ -1,4 +1,4 @@
-import data from "../../JsonData/BLogdata/BLogdata.json"
+import data from "@/pages/JsonData/BLogdata/Blogdata.json"
 export default function handler(req, res) {
   if (req.method === 'GET') {
     res.status(200).json({ message: "success", data: data });
