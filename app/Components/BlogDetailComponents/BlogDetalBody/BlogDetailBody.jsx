@@ -12,21 +12,17 @@ const BlogDetailBody = () => {
   const search = useSearchParams();
   const id = search.get('id')
   const dispatch = useDispatch();
-  const [Blog, setBlog] = useState({});
 
   useEffect(() => {
     dispatch(GetSingleBlog({id}));
-  }, [dispatch, search]);
+  }, [SingleBlog.length ]);
 
-  useEffect(() => {
-    if (SingleBlog) setBlog(SingleBlog);
-  }, [SingleBlog]);
 
   return (
     <div className="w-full max-w-[825px] px-4">
       {/* Blog Image & Date */}
       <div
-        style={{ backgroundImage: `url('${Blog.Image}')` }}
+        style={{ backgroundImage: `url('${SingleBlog.Image}')` }}
         className="w-full aspect-[4/3] bg-cover bg-center bg-no-repeat relative"
       >
         <h1 className=" bg-[#FDC107] text-white text-2xl sm:text-[50px] p-2 sm:p-4 capitalize w-[80px] sm:w-[157px]">
@@ -39,21 +35,21 @@ const BlogDetailBody = () => {
         <div className="flex items-center gap-2">
           <FaRegUserCircle size={24} className="text-[#FCC400]" />
           <h1 className="text-base sm:text-[16.76px] text-[#696969] font-normal capitalize">
-            {Blog.author}
+            {SingleBlog.author}
           </h1>
         </div>
         <div className="flex items-center gap-2">
           <RiMessage2Line size={24} className="text-[#FCC400]" />
           <h1 className="text-base sm:text-[16.76px] text-[#696969] font-normal capitalize">
-            {Blog.comments}
+            {SingleBlog.comments}
           </h1>
         </div>
       </div>
 
       {/* Blog Content */}
       <div className="grid gap-3">
-        <p className="text-[15px] sm:text-[17px] text-[#696969] font-normal">{Blog.Paragraph}</p>
-        <p className="text-[15px] sm:text-[17px] text-[#696969] font-normal">{Blog.Paragraph2}</p>
+        <p className="text-[15px] sm:text-[17px] text-[#696969] font-normal">{SingleBlog.Paragraph}</p>
+        <p className="text-[15px] sm:text-[17px] text-[#696969] font-normal">{SingleBlog.Paragraph2}</p>
       </div>
 
       {/* Comments Section */}
@@ -65,11 +61,12 @@ const BlogDetailBody = () => {
           {[1, 2].map((_, index) => (
             <div key={index} className="flex flex-col sm:flex-row gap-4">
               <Image
-                src={Blog.Image}
+                src={SingleBlog.Image || "/default-image.jpg"}
                 width={150}
                 height={120}
                 alt="comment-img"
                 className="w-[100px] sm:w-[150px] h-auto object-cover"
+                loading="lazy"
               />
               <div className="grid gap-2 w-full">
                 <div className="flex flex-col sm:flex-row sm:justify-between">

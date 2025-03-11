@@ -1,5 +1,5 @@
-"use client"
-import { useState } from "react";
+"use client";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaBars } from "react-icons/fa";
 import Banner from "@/public/Assests/Blog/blog-lastestnews-1 1.png";
@@ -7,6 +7,14 @@ import Banner2 from "@/public/Assests/Blog/sidebar-banner-bg 1.png";
 
 const BlogDetailBody2 = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  useEffect(() => {
+    if (isDrawerOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }, [isDrawerOpen]);
 
   return (
     <>
@@ -57,10 +65,9 @@ const BlogDetailBody2 = () => {
       <div className="xl:hidden">
         <button
           onClick={() => setIsDrawerOpen(true)}
-          className=" fixed bg-[#FDC107] text-white rounded-md"
+          className="fixed right-0 bg-[#FDC107] text-white rounded-md w-[30px] h-[30px] flex justify-center items-center"
         >
-          <FaBars size={20} className="text-center"/>
-          <span>Open Menu</span>
+          <FaBars size={20} className="text-center" />
         </button>
 
         {/* 🔥 Drawer Background Overlay */}
