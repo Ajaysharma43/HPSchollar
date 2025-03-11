@@ -3,17 +3,15 @@ import LOGO from "@/public/Assests/Navbar/Logo.jpg-removebg-preview (1) 1 (2).pn
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { FaBars } from "react-icons/fa";
 import Image from "next/image";
-import { useRef, useState } from "react";
-import { Accordion, AccordionItem } from "@szhsin/react-accordion";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const [isMenuVisible, setIsMenuVisible] = useState(false);
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   const toggleDropdown = () => {
     setIsDropdownVisible(!isDropdownVisible);
@@ -23,7 +21,11 @@ const Navbar = () => {
     setIsMenuVisible(!isMenuVisible);
   };
 
-  const isActive =(path) =>  pathname == path;
+  const isActive = (path) => pathname === path;
+
+  useEffect(() => {
+    setIsMenuVisible(false);
+  }, [pathname]);
 
   return (
     <>
