@@ -10,7 +10,14 @@ import JobSessions_Component from "@/app/Components/Homepage_Components/JobSessi
 import Paper_Component from "@/app/Components/Homepage_Components/Paper_Components/page";
 import Subscription_Homepage from "@/app/Components/Homepage_Components/Subscription_Homepagee/page";
 
+export const metadata = {
+  title: "HPschollar",
+  description: "This is an amazing page built with Next.js!",
+  keywords: ["HPschollar", "Himachal history", "Metadata", "Web Development"],
+};
+
 const Homapage = () => {
+  
   return (
     <>
       <article className="mb-6">
