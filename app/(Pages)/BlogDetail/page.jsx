@@ -3,6 +3,12 @@ import BlogDetailBody2 from "@/app/Components/BlogDetailComponents/BlogDetailBod
 import BlogDetailBody from "@/app/Components/BlogDetailComponents/BlogDetalBody/BlogDetailBody";
 import { Suspense } from "react";
 
+export const metadata = {
+    title: "HPschollar BlogDetail",
+    description: "This is an amazing page built with Next.js!",
+    keywords: ["HPschollar", "Himachal history", "Metadata", "Web Development"],
+  };
+
 const BlogDetail = () => {
     return(
         <>
