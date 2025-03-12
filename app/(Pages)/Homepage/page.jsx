@@ -11,7 +11,7 @@ import Paper_Component from "@/app/Components/Homepage_Components/Paper_Componen
 import Subscription_Homepage from "@/app/Components/Homepage_Components/Subscription_Homepagee/page";
 
 export const metadata = {
-  title: "HPschollar",
+  title: "HPschollar Homapage",
   description: "This is an amazing page built with Next.js!",
   keywords: ["HPschollar", "Himachal history", "Metadata", "Web Development"],
 };
