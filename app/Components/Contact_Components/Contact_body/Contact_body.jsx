@@ -1,66 +1,59 @@
 const Contact_Body = () => {
-    return (
-      <>
-        <div className="grid justify-center text-center px-4">
-          <h1 className="text-[50px] text-[#2E2E2E] font-bold">Contact Us</h1>
-          <p className="text-[17px] text-[#696969] font-normal capitalize">
-            Fill the form below so we can get to know you and your needs better.
-          </p>
-  
-          <form
-            action=""
-            className="grid gap-[30px] mt-[20px] mb-[20px] justify-center"
-          >
-            <div className="flex flex-wrap gap-[30px] sm:gap-[60px] flex-col sm:flex-row">
-              <input
-                type="text"
-                name=""
-                id=""
-                placeholder="Your Name"
-                className="w-full sm:w-[527.19px] h-[75.19px] bg-[#FCC4001A] text-[19px] text-[#000000] font-normal focus:outline-none placeholder:text-black pl-[20px]"
-              />
-              <input
-                type="text"
-                name=""
-                id=""
-                placeholder="Your Email"
-                className="w-full sm:w-[527.19px] h-[75.19px] bg-[#FCC4001A] text-[19px] text-[#000000] font-normal focus:outline-none placeholder:text-black pl-[20px]"
-              />
-            </div>
-  
-            <div className="flex flex-wrap gap-[30px] sm:gap-[60px] flex-col sm:flex-row">
-              <input
-                type="text"
-                name=""
-                id=""
-                placeholder="Phone No."
-                className="w-full sm:w-[527.19px] h-[75.19px] bg-[#FCC4001A] text-[19px] text-[#000000] font-normal focus:outline-none placeholder:text-black pl-[20px]"
-              />
-              <input
-                type="text"
-                name=""
-                id=""
-                placeholder="Subject"
-                className="w-full sm:w-[527.19px] h-[75.19px] bg-[#FCC4001A] text-[19px] text-[#000000] font-normal focus:outline-none placeholder:text-black pl-[20px]"
-              />
-            </div>
-  
-            <textarea
-              name=""
-              id=""
-              placeholder="Your Comments"
-              className="w-full sm:w-[1119.87px] h-[190.67px] bg-[#FCC4001A] text-[19px] text-[#000000] font-normal focus:outline-none placeholder:text-black pl-[20px] pt-[20px]"
+  return (
+    <div className="grid justify-center text-center px-4 py-10">
+      <div className="w-full sm:max-w-[1200px] mx-auto">
+        <h1 className="text-[40px] sm:text-[50px] text-[#2E2E2E] font-bold">
+          Contact Us
+        </h1>
+        <p className="text-[16px] sm:text-[17px] text-[#696969] font-normal capitalize mt-1">
+          Fill the form below so we can get to know you and your needs better.
+        </p>
+
+        <form className="grid gap-[25px] mt-[20px] mb-[20px] justify-center">
+          {/* Name & Email */}
+          <div className="flex flex-col sm:flex-row sm:gap-[40px] gap-[20px] sm:justify-center">
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="w-full sm:w-[340px] h-[55px] bg-[#FFF8E6] text-[16px] text-black placeholder:text-black px-4 focus:outline-none"
             />
-  
-            <div className="flex justify-center mt-[20px]">
-              <button className="w-full sm:w-[201.98px] h-[60.26px] bg-[#FCC400] text-[19px] text-[#FFFFFF] font-semibold rounded-[23.23px]">
-                Submit
-              </button>
-            </div>
-          </form>
-        </div>
-      </>
-    );
-  };
-  
-  export default Contact_Body;
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="w-full sm:w-[340px] h-[55px] bg-[#FFF8E6] text-[16px] text-black placeholder:text-black px-4 focus:outline-none"
+            />
+          </div>
+
+          {/* Phone & Subject */}
+          <div className="flex flex-col sm:flex-row sm:gap-[40px] gap-[20px] sm:justify-center">
+            <input
+              type="text"
+              placeholder="Phone No."
+              className="w-full sm:w-[340px] h-[55px] bg-[#FFF8E6] text-[16px] text-black placeholder:text-black px-4 focus:outline-none"
+            />
+            <input
+              type="text"
+              placeholder="Subject"
+              className="w-full sm:w-[340px] h-[55px] bg-[#FFF8E6] text-[16px] text-black placeholder:text-black px-4 focus:outline-none"
+            />
+          </div>
+
+          {/* Textarea */}
+          <textarea
+            placeholder="Your Comments"
+            className="w-full sm:w-[720px] h-[160px] bg-[#FFF8E6] text-[16px] text-black placeholder:text-black px-4 pt-4 focus:outline-none"
+          />
+
+          {/* Button */}
+          <div className="flex justify-center mt-[10px]">
+            <button className="w-[120px] h-[40px] bg-[#FCC400] text-white text-[15px] font-medium rounded-[12px]">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default Contact_Body;
