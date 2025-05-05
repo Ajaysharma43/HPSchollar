@@ -46,7 +46,9 @@ const Navbar = () => {
       <nav className="flex justify-center xl:gap-[187px] 2xl:gap-[187px] gap-[70%] relative mb-[10px] p-2">
         {/* Logo */}
         <section>
+          <Link href={'/'}>
           <Image src={LOGO} alt="LOGO" height={58.53} width={54.43} />
+          </Link>
         </section>
 
         {/* Desktop Nav Links */}
