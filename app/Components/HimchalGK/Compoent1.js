@@ -1,10 +1,14 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import Image1 from "@/public/Assests/HimchalGK/image 4.png"; // Add more images if needed
+import Image1 from "@/public/Assests/HimchalGK/image 4.png";
+import Image2 from '@/public/Assests/HimchalGK/ashwini-chaudhary-monty-EEsqZyA8b0E-unsplash.jpg'
+import Image3 from '@/public/Assests/HimchalGK/naman-pandey-y3nWJ-QznP4-unsplash.jpg'
+import Image4 from '@/public/Assests/HimchalGK/rishabh-pandoh-m1PFxGQ-5x0-unsplash.jpg'
+import { GrNext , GrPrevious  } from "react-icons/gr";
 
 const Component1 = () => {
-    const images = [Image1, Image1, Image1]; // Add real images here
+    const images = [Image1, Image2, Image3 , Image4];
     const [current, setCurrent] = useState(0);
 
     const nextSlide = () => {
@@ -32,46 +36,29 @@ const Component1 = () => {
                         className="object-cover"
                     />
 
-                    {/* Left Button */}
-
-                    <button
-                        onClick={prevSlide}
-                        className="absolute top-1/2 left-2 transform -translate-y-1/2 z-10 w-[61.69px] h-[76.79px]"
-                    >
-                        <div
-                            className="flex items-center justify-center"
-                            style={{
-                                width: "61.69px",
-                                height: "76.79px",
-                                backgroundColor: "#FFFFFF5E",
-                                borderRadius: "8px", // slight rounding
-                                color: "#FDC107",
-                                fontSize: "28px"
-                            }}
-                        >
-                            ‹
-                        </div>
-                    </button>
-
-                    {/* Right Button */}
-                    <button
-                        onClick={nextSlide}
-                        className="absolute top-1/2 right-2 transform -translate-y-1/2 z-10"
-                    >
-                        <div
-                            className="flex items-center justify-center"
-                            style={{
-                                width: "61.69px",
-                                height: "76.79px",
-                                backgroundColor: "#FFFFFF5E",
-                                borderRadius: "8px",
-                                color: "#FDC107",
-                                fontSize: "28px"
-                            }}
-                        >
-                            ›
-                        </div>
-                    </button>
+                   {/* Prev Button */}
+                             <button
+                               onClick={prevSlide}
+                               className="absolute top-1/2 transform -translate-y-1/2 z-10 w-[61.69px] h-[76.79px]"
+                             >
+                               <div
+                                 className="flex items-center justify-center sm:w-[61.69px] sm:h-[76.79px] w-[31.69px] h-[46.79px] bg-[#FFFFFF5E] text-[#FDC107] text-[18px] sm:text-[28px] font-bold"
+                               >
+                                 <GrPrevious/>
+                               </div>
+                             </button>
+                   
+                             {/* Next Button */}
+                             <button
+                               onClick={nextSlide}
+                               className="absolute top-1/2 right-0 transform -translate-y-1/2 z-10"
+                             >
+                               <div
+                                 className="flex items-center justify-center sm:w-[61.69px] sm:h-[76.79px] w-[31.69px] h-[46.79px] bg-[#FFFFFF5E] text-[#FDC107] text-[18px] sm:text-[28px] font-bold"
+                               >
+                                 <GrNext/>
+                               </div>
+                             </button>
 
                 </div>
 
