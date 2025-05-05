@@ -1,6 +1,7 @@
 "use client";
-import Banner from "@/public/Assests/Homapage/freepik-export-2024063006005156so 1 (1).png"
-import Image from "next/image"
+import Banner from "@/public/Assests/Homapage/freepik-export-2024063006005156so 1 (1).png";
+import Image_bg from "@/public/Assests/Homapage/Logo.jpg-removebg-preview (1) 1 (1).png";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const Slide1 = () => {
@@ -33,7 +34,7 @@ const Slide1 = () => {
         <section className="relative w-full md:w-auto">
           <div
             className="absolute inset-0 bg-cover bg-no-repeat opacity-50 md:opacity-[8%] left-0 md:left-[200px] w-full h-full md:min-h-[100vh]"
-            style={{ backgroundImage: `url('${Image.src}')` }}
+            style={{ backgroundImage: `url('${Image_bg.src}')` }}
           ></div>
           <motion.div
             className="relative z-10 flex justify-center md:block"
@@ -42,7 +43,13 @@ const Slide1 = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <Image src={Banner} width={451.335} height={570.972} alt="Banner Image" className="h-[463.972px] xl:h-[570.972px] w-[451.335px]"/>
+            <Image
+              src={Banner}
+              width={451.335}
+              height={570.972}
+              alt="Banner Image"
+              className="h-[500.972px] xl:h-[570.972px] w-[451.335px]"
+            />
           </motion.div>
         </section>
       </div>
