@@ -9,7 +9,7 @@ const TestSeries = () => {
         <article>
             <TestSeriesHeader/>
         </article>
-        <article className="flex flex-wrap justify-center mt-[20px]">
+        <article className="flex flex-wrap justify-center mt-[40px] mb-[40px]">
             <section>
                 <TestSeriesComponent1/>
             </section>
