@@ -25,6 +25,7 @@ const Navbar = () => {
 
   useEffect(() => {
     setIsMenuVisible(false);
+    setIsDropdownVisible(false)
   }, [pathname]);
 
   // Disable scrolling when menu is open
