@@ -74,9 +74,7 @@ const Navbar = () => {
                 <Link href="/Himachalgk">
                   <h1 className={`hover:text-[#FCC400] ${isActive("/HimachalGk") ? "text-[#FCC400]" : ""}`}>Geography</h1>
                 </Link>
-                <Link href="/HimachalArtCulture">
                   <h1 className={`hover:text-[#FCC400] ${isActive("/HimachalArtCulture") ? "text-[#FCC400]" : ""}`}>Art & Culture</h1>
-                </Link>
               </div>
             )}
           </div>
@@ -123,7 +121,7 @@ const Navbar = () => {
                     <div className="pl-4 mt-2 text-gray-600 space-y-2">
                       <Link href="/HimachalHistory"><p className={`${isActive("/HimachalHistory") ? "text-[#FCC400]" : ""}`}>History</p></Link>
                       <Link href="/Himachalgk"><p className={`${isActive("/HimachalGk") ? "text-[#FCC400]" : ""}`}>Geography</p></Link>
-                      <Link href="/HimachalArtCulture"><p className={`${isActive("/HimachalArtCulture") ? "text-[#FCC400]" : ""}`}>Art & Culture</p></Link>
+                      <p className={`${isActive("/HimachalArtCulture") ? "text-[#FCC400]" : ""}`}>Art & Culture</p>
                     </div>
                   </details>
 
