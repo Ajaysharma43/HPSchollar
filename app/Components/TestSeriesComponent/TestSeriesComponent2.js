@@ -34,8 +34,8 @@ const TestSeriesComponent2 = () => {
         </ul>
       </div>
 
-      {/* Mobile Floating Button */}
-      <div className="fixed bottom-4 left-4 lg:hidden z-50">
+      {/* Inline Button for Mobile */}
+      <div className="lg:hidden px-4 mt-6">
         <button
           onClick={() => setIsOpen(true)}
           className="bg-[#603913] text-white text-sm px-4 py-2 rounded-md shadow-md"

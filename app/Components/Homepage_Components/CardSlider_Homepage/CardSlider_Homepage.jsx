@@ -41,7 +41,7 @@ const CardSlider_Homepage = () => {
     ),
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -109,11 +109,11 @@ const CardSlider_Homepage = () => {
         {slides.map((slide, index) => (
           <div key={slide.id} className="p-4">
             <div
-              className={`xl:h-[289.33px]  flex justify-center rounded-lg transition-all duration-200 ${
+              className={`lg:h-[289.33px]  flex justify-center rounded-lg transition-all duration-200 ${
                 currentSlide === index ? "bg-[#FCC400]" : "bg-[#FFFFFF] shadow-xl"
               }`}
             >
-              <div className="w-full sm:w-[328.31px] m-4">
+              <div className="w-full xl:w-[328.31px] m-4">
                 <p
                   className={`text-[15px] transition-all duration-200 ${
                     currentSlide === index ? "text-[#FFFFFF]" : "text-[#696969]"
