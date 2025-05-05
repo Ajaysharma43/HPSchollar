@@ -3,6 +3,13 @@ import HimachalHistoryHeader from "@/app/Components/HimachalHistory/HimachalHist
 import Component2 from "@/app/Components/HimchalGK/Component2"
 import CardSlider_Homepage from "@/app/Components/Homepage_Components/CardSlider_Homepage/CardSlider_Homepage"
 
+export const metadata = {
+    title: "HPschollar HimachalHistory",
+    description: "This is an amazing page built with Next.js!",
+    keywords: ["HPschollar", "Himachal history", "Metadata", "Web Development"],
+  };
+  
+
 const HimachalHistory = () => {
     return (
         <>

@@ -3,6 +3,13 @@ import AboutusHeader from "@/app/Components/AboutusComponents/AboutusHeader/Abou
 import AboutusComponent1 from "@/app/Components/AboutusComponents/component1/component1"
 import CardSlider_Homepage from "@/app/Components/Homepage_Components/CardSlider_Homepage/CardSlider_Homepage"
 
+export const metadata = {
+    title: "HPschollar Aboutus",
+    description: "This is an amazing page built with Next.js!",
+    keywords: ["HPschollar", "Himachal history", "Metadata", "Web Development"],
+  };
+  
+
 const Aboutus = () => {
     return (
         <>

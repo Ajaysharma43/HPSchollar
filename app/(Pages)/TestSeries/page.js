@@ -2,6 +2,13 @@ import TestSeriesComponent1 from "@/app/Components/TestSeriesComponent/TestSerie
 import TestSeriesComponent2 from "@/app/Components/TestSeriesComponent/TestSeriesComponent2"
 import TestSeriesHeader from "@/app/Components/TestSeriesComponent/TestSeriesHeader"
 
+export const metadata = {
+    title: "HPschollar TestSeries",
+    description: "This is an amazing page built with Next.js!",
+    keywords: ["HPschollar", "Himachal history", "Metadata", "Web Development"],
+  };
+  
+
 const TestSeries = () => {
     return (
         <>
