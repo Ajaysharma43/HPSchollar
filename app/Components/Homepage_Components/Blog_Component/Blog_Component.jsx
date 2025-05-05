@@ -96,7 +96,7 @@ const Blog_Component = () => {
         </div>
       </div>
 
-      <div className="hidden sm:flex flex-wrap justify-center gap-[30px]">
+      <div className="hidden sm:flex flex-wrap justify-center gap-[30px] m-[30px]">
         {blogPosts.map((post) => (
           <div key={post.id} className="flex flex-col justify-center items-center w-full sm:w-auto">
             <div>
@@ -109,7 +109,7 @@ const Blog_Component = () => {
               />
             </div>
             <div className="w-full sm:w-[343.41px] h-auto rounded-lg shadow-2xl relative bottom-[100px] bg-[#FFFFFF] ml-0 sm:ml-6 p-4">
-              <div className="flex flex-col sm:flex-row justify-center gap-2 p-4">
+              <div className="flex flex-col sm:flex-row justify-start gap-4 p-4">
                 <div className="flex gap-1 mb-1">
                   <span><FaRegUserCircle size={20} color="#FCC400" /></span>
                   <h1 className="text-[16.76px] text-[#696969] font-normal capitalize">{post.author}</h1>
@@ -120,7 +120,7 @@ const Blog_Component = () => {
                 </div>
               </div>
               <div className=" p-2 flex justify-center">
-                <p className="text-[19.72px] text-[#292929] leading-[33.53px] font-semibold w-full sm:w-[297.33px]">
+                <p className="text-[19.72px] text-[#292929] leading-[33.53px] font-semibold w-full sm:w-[280.33px]">
                   {post.title}
                 </p>
               </div>

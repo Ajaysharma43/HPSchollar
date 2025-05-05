@@ -10,8 +10,8 @@ const HimachalGk = () => {
             <article>
                 <HimachalGkHeader />
             </article>
-            <div className="max-w-[1280px] mx-auto">
-                <article className="flex flex-col lg:flex-row px-4 sm:px-6 lg:px-10 gap-8">
+            <div className="max-w-[1280px] mx-auto bg-white">
+                <article className="flex flex-col lg:flex-row px-4 sm:px-6 lg:px-10 gap-8 bg-white">
                     <section className="w-full lg:w-2/3">
                         <Component1 />
                     </section>

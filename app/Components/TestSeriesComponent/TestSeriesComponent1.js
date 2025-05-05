@@ -27,20 +27,32 @@ const TestSeriesComponent1 = () => {
           />
         </svg>
       </div>
-      <p className="text-xs text-[#666] mt-2">814+ Exams Covered. Which Exam Are You Preparing For?</p>
+      <p className="text-xs text-[#666] mt-2">
+        814+ Exams Covered. Which Exam Are You Preparing For?
+      </p>
 
       {/* Test Series Cards */}
       <div className="space-y-10 mt-6">
-        {[1, 2, 3].map((_, i) => (
-          <div key={i} className="border-b border-dashed pb-8">
+        {[1, 2, 3].map((_, i, arr) => (
+          <div
+            key={i}
+            className={`${i !== arr.length - 1 ? "border-b border-dashed pb-8" : ""}`}
+          >
             <div className="flex gap-6 items-start">
-              <Image src={Image1} alt="ssc" width={70} height={70} className="object-contain" />
+              <Image
+                src={Image1}
+                alt="ssc"
+                width={70}
+                height={70}
+                className="object-contain"
+              />
               <div className="space-y-2">
                 <h3 className="font-bold text-sm sm:text-base">
                   SSC CGL (Tier I & Tier II) Mock Test 2024
                 </h3>
                 <p className="text-xs text-[#333]">
-                  995 Total Tests <span className="text-[#FDC107] font-semibold">| 7 Free Tests</span>
+                  995 Total Tests{" "}
+                  <span className="text-[#FDC107] font-semibold">| 7 Free Tests</span>
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-y-2 gap-[100px] text-[13px] text-[#444]">
                   <p>• 2 Mission CGL</p>
