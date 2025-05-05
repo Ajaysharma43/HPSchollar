@@ -48,7 +48,7 @@ const Slide1 = () => {
               width={451.335}
               height={570.972}
               alt="Banner Image"
-              className="h-[500.972px] xl:h-[570.972px] w-[451.335px]"
+              className="h-[421.972px] xl:h-[570.972px] w-[451.335px]"
             />
           </motion.div>
         </section>
