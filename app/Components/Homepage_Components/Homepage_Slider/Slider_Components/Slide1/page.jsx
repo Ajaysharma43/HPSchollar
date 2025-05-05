@@ -1,12 +1,12 @@
 "use client";
-import Image_Component from "../../Image_Component/page";
-import Image from "@/public/Assests/Homapage/Logo.jpg-removebg-preview (1) 1 (1).png";
+import Banner from "@/public/Assests/Homapage/freepik-export-2024063006005156so 1 (1).png"
+import Image from "next/image"
 import { motion } from "framer-motion";
 
 const Slide1 = () => {
   return (
     <>
-      <div className="h-full md:h-[619.11px] xl:h-[619.11px] 2xl:h-[619.11px] w-full flex flex-col-reverse md:flex-row justify-center items-center bg-[#0F7500] pt-10 p-3">
+      <div className="h-full md:h-[619.11px] xl:h-[619.11px] 2xl:h-[619.11px] w-full flex flex-col-reverse md:flex-row justify-center items-center bg-[#0F7500] pt-10 pb-28 p-3">
         <motion.section
           className="w-full md:w-[653px] grid gap-[19px] text-center md:text-left"
           initial={{ opacity: 0, x: -50 }}
@@ -42,7 +42,7 @@ const Slide1 = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <Image_Component />
+            <Image src={Banner} width={451.335} height={570.972} alt="Banner Image" />
           </motion.div>
         </section>
       </div>

@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Slide3 = () => {
   return (
     <>
-      <div className="h-full md:h-[619.11px] xl:h-[619.11px] 2xl:h-[619.11px] w-full flex flex-col-reverse md:flex-row justify-center items-center bg-[#7b12b4] pt-10 pb-14 p-3">
+      <div className="h-full md:h-[619.11px] xl:h-[619.11px] 2xl:h-[619.11px] w-full flex flex-col-reverse md:flex-row justify-center items-center bg-[#7b12b4] pt-10 pb-28 p-3">
         <motion.section
           className="w-full md:w-[653px] grid gap-[19px] text-center md:text-left"
           initial={{ opacity: 0, x: -50 }}
